@@ -1,6 +1,6 @@
 
 //Canvas DOM manipulation
-var canvas = document.getElementById("canvasID")
+var canvas = document.getElementById("adventurParkCanvas")
 var ctx = canvas.getContext("2d")
 
 //Call init function
