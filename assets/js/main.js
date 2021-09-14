@@ -32,7 +32,7 @@ function init(){
     ctx.strokeStyle = "goldenrod"
     ctx.lineWidth = 5
     ctx.strokeRect(btn1_x, btn1_y, btn1_w, btn1_h)
-    ctx.fillText("Start",)
+    ctx.fillText("Start", canvas.width/2, canvas.width/2)
 }
 
 function gameSetup(){
