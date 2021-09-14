@@ -8,7 +8,8 @@ var btn1_w = 200
 var btn1_h = 50
 var btn1_x = canvas.width/2 - btn1_w/2
 var btn1_y = canvas.height/2
-var game_loop_interval
+var update_interval 
+var render_interval
 
 //Call init function
 init()
@@ -35,15 +36,13 @@ function init(){
     //Put the gameSetup() function here
     function gameSetup(){
 
-        game_loop_interval = setInterval(function(){
+        update_interval = setInterval(function(){
             update()
+        }, 10/1000)
+
+        render_interval = setInterval( function(){
             render(ctx)
-            
-        },10/1000)
-
-
-
-
+        }, 30/1000)
     }
 }
 
@@ -51,9 +50,6 @@ function init(){
 
 
 function update(){
-
-
-
 }
 
 
