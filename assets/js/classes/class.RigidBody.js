@@ -1,18 +1,26 @@
-class RigidBody{
+class RigidBody extends Entity{
 
 
-    constructor(x, y, w, h, gravity, colition){
-        this.x = x
-        this.y = y
-        this.w = w
-        this.h = h
+    
+    constructor(afectedByGravity){
+        super(x, y, width, height)
 
-
+        this.xSpeed = 0
+        this.ySpeed = 0
+        this.afectedByGravity = afectedByGravity
+        this.gravity = 1
+    
 
     }
 
+    
 
 
+
+
+
+
+    
 
 
 
