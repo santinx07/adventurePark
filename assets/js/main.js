@@ -33,19 +33,18 @@ function init(){
     ctx.lineWidth = 5
     ctx.strokeRect(btn1_x, btn1_y, btn1_w, btn1_h)
     ctx.fillText("Start",)
-    //Put the gameSetup() function here
-    function gameSetup(){
-
-        update_interval = setInterval(function(){
-            update()
-        }, 10/1000)
-
-        render_interval = setInterval( function(){
-            render(ctx)
-        }, 30/1000)
-    }
 }
 
+function gameSetup(){
+
+    update_interval = setInterval(function(){
+        update()
+    }, 10/1000)
+
+    render_interval = setInterval( function(){
+        render(ctx)
+    }, 30/1000)
+}
 
 
 
