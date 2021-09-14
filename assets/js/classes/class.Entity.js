@@ -7,7 +7,7 @@ class Entity{
         this.height = height
         this.color = 'yellow'
         this.is_sprite = false
-        this.sprite = ''
+        this.sprite
 
     }
     
