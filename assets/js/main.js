@@ -8,7 +8,7 @@ var btn1_w = 200
 var btn1_h = 50
 var btn1_x = canvas.width/2 - btn1_w/2
 var btn1_y = canvas.height/2
-
+var game_loop_interval
 
 //Call init function
 init()
@@ -33,4 +33,32 @@ function init(){
     ctx.strokeRect(btn1_x, btn1_y, btn1_w, btn1_h)
     ctx.fillText("Start",)
     //Put the gameSetup() function here
+    function gameSetup(){
+
+        game_loop_interval = setInterval(function(){
+            update()
+            render(ctx)
+            
+        },10/1000)
+
+
+
+
+    }
+}
+
+
+
+
+function update(){
+
+
+
+}
+
+
+function render(ctx){
+    ctx.save
+    ctx.clearRect(0,0,canvas.width, canvas.height)   
+    ctx.restore
 }
