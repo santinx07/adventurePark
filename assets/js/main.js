@@ -1,6 +1,6 @@
 
 //Canvas DOM manipulation
-var canvas = document.getElementById("adventurParkCanvas")
+var canvas = document.getElementById("gameCanvas")
 var ctx = canvas.getContext("2d")
 
 //Variables
@@ -26,6 +26,16 @@ function gameSetup(){
     game_started = true
 }
 
+function renderLevelSelector(){
+}
+
+function stopGame(){
+    game_started =  false
+    clearInterval(update_interval)
+    clearInterval(render_interval)
+    init()
+}
+
 canvas.addEventListener("mouseup", function(evt){
     if(on_menu){
         //Check mouse locations
@@ -37,11 +47,11 @@ canvas.addEventListener("mouseup", function(evt){
             //Start Game button (btn1)
             if(mouse_y > btn1_y && mouse_y < btn1_y + btn_h){
                 on_menu = false
-                gameSetup()
+                renderLevelSelector()
             }
             //Color Picker button (btn2)
             if(mouse_y > btn2_y && mouse_y < btn2_y + btn_h){
-                
+                on_menu = false
             }
         }
     }

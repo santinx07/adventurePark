@@ -2,7 +2,7 @@ body{
     background-color: rgb(195, 245, 121);
 }
 
-#adventurParkCanvas{
+#gameCanvas{
     border: 10px double green;
     position: absolute;
     top: 50%;
