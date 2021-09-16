@@ -7,8 +7,6 @@ function init(){
     ctx.font = "40px fantasy"
     ctx.textAlign = "center"
     ctx.fillText("ADVENTURE PARK", canvas.width/2,canvas.height/3)
-    ctx.font = "15px fantasy"
-    ctx.fillText("Game Made by David J. and Santiago N.", canvas.width/3*2, canvas.height/12*5)
     //Buttons
     ctx.fillStyle = "gold"
     ctx.fillRect(btn_x, btn1_y, btn_w, btn_h)
