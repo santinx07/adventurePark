@@ -17,6 +17,7 @@ class Entity{
 
         if(this.sprite){
             let image = new Image()
+            
 
 
         }
