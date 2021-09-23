@@ -27,6 +27,9 @@ function gameSetup(){
 }
 
 function renderLevelSelector(){
+    ctx.clearRect(0,0,canvas.width,canvas.height)
+    ctx.fillStyle = "#21b51f"
+    ctx.fillRect(0,0,canvas.width,canvas.height)
 }
 
 function stopGame(){

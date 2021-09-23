@@ -16,7 +16,7 @@ function init(){
     ctx.strokeRect(btn_x, btn1_y, btn_w, btn_h)
     ctx.strokeRect(btn_x, btn2_y, btn_w, btn_h)
     ctx.fillStyle = "goldenrod"
-    ctx.font = "25px fantasy"
+    ctx.font = "25px Copperplate"
     ctx.textBaseline = "middle"
     ctx.fillText("Start Game", canvas.width/2, btn1_y + btn_h/2)
     ctx.fillText("Color Picker", canvas.width/2, btn2_y + btn_h/2)
