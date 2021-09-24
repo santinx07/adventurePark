@@ -17,6 +17,7 @@ var render_interval
 //Call init function
 init()
 
+//Game set up function
 function gameSetup(){
     //reset
     //create entities
@@ -26,12 +27,7 @@ function gameSetup(){
     game_started = true
 }
 
-function renderLevelSelector(){
-    ctx.clearRect(0,0,canvas.width,canvas.height)
-    ctx.fillStyle = "#21b51f"
-    ctx.fillRect(0,0,canvas.width,canvas.height)
-}
-
+//Stop game function
 function stopGame(){
     game_started =  false
     clearInterval(update_interval)
@@ -39,6 +35,7 @@ function stopGame(){
     init()
 }
 
+//Event listener for "Start Game" and "Color Picker" buttons
 canvas.addEventListener("mouseup", function(evt){
     if(on_menu){
         //Check mouse locations

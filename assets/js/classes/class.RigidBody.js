@@ -2,31 +2,12 @@ class RigidBody extends Entity{
 
 
     
-    constructor(afectedByGravity){
+    constructor(affected_by_gravity){
         super(x, y, width, height)
 
-        this.xSpeed = 0
-        this.ySpeed = 0
-        this.afectedByGravity = afectedByGravity
+        this.affected_by_gravity = affected_by_gravity
+        this.x_speed = 0
+        this.y_speed = 0
         this.gravity = 1
-    
-
     }
-
-
-
-    
-
-    
-
-
-
-
-
-
-    
-
-
-
-
 }

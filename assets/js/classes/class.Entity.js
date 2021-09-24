@@ -1,3 +1,4 @@
+
 class Entity{
 
     constructor(x, y, width, height){
@@ -8,32 +9,15 @@ class Entity{
         this.color = 'yellow'
         this.is_sprite = false
         this.sprite
-
     }
-    
-
 
     __render(ctx){
-
         if(this.sprite){
-            let image = new Image()
-            
-
-
+            ctx.drawImage(this.sprite, this.x, this.y, this.width, this.height)
+            return
         }
+
         ctx.fillStyle = this.color
         ctx.fillRect(this.x, this.y, this.width, this.height)
-
     }
-
-
-
-
-
-
-
-
-
-
-    
 }
