@@ -19,4 +19,6 @@ function renderLevelSelector(){
     ctx.fillRect(0,0,canvas.width, canvas.height/6*2)
     ctx.fillStyle = "#16bab1"
     ctx.fillRect(0,0,canvas.width, canvas.height/6)
+    //set on_menu to true
+    on_menu = true
 }

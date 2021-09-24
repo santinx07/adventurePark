@@ -5,7 +5,7 @@ var ctx = canvas.getContext("2d")
 
 //Variables
 var game_started = false
-var on_menu = true
+var on_menu
 var btn_w = 200
 var btn_h = 50
 var btn_x = canvas.width/2 - btn_w/2
