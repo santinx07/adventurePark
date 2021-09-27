@@ -35,4 +35,6 @@ function init(){
     ctx.textBaseline = "middle"
     ctx.fillText("Start Game", canvas.width/2, btn1_y + btn_h/2)
     ctx.fillText("Color Picker", canvas.width/2, btn2_y + btn_h/2)
+    //Set current location
+    current_location = "menu"
 }

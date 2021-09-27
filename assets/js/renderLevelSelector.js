@@ -19,6 +19,16 @@ function renderLevelSelector(){
     ctx.fillRect(0,0,canvas.width, canvas.height/6*2)
     ctx.fillStyle = "#16bab1"
     ctx.fillRect(0,0,canvas.width, canvas.height/6)
-    //set on_menu to true
-    on_menu = true
+    //Buttons
+    //tutorial/map1
+    ctx.fillStyle = "gold"
+    ctx.fillRect(canvas.width/4-45, canvas.height/4, 90, 90) 
+    ctx.strokeStyle = "goldenrod"
+    ctx.strokeRect(canvas.width/4-45, canvas.height/4, 90, 90) 
+    ctx.fillStyle = "goldenrod"
+    ctx.font = "25px Copperplate"
+    ctx.textBaseline = "middle"
+    ctx.fillText("Tutorial", canvas.width/4, canvas.height/4+45, 75)
+    //Set current location
+    current_location = "level selector"
 }

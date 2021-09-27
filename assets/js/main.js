@@ -5,7 +5,7 @@ var ctx = canvas.getContext("2d")
 
 //Variables
 var game_started = false
-var on_menu
+var current_location
 var btn_w = 200
 var btn_h = 50
 var btn_x = canvas.width/2 - btn_w/2
@@ -37,21 +37,34 @@ function stopGame(){
 
 //Event listener for "Start Game" and "Color Picker" buttons
 canvas.addEventListener("mouseup", function(evt){
-    if(on_menu){
-        //Check mouse locations
-        var mouse_x = evt.offsetX
-        var mouse_y = evt.offsetY
+    //Check mouse locations
+    var mouse_x = evt.offsetX
+    var mouse_y = evt.offsetY
+    //Current Location: Menu
+    if(current_location == "menu"){
         //Check clicked x location
         if(mouse_x < btn_x + btn_w && mouse_x > btn_x){
             //Check clicked y location
             //Start Game button (btn1)
             if(mouse_y > btn1_y && mouse_y < btn1_y + btn_h){
-                on_menu = false
                 renderLevelSelector()
+                return
             }
             //Color Picker button (btn2)
             if(mouse_y > btn2_y && mouse_y < btn2_y + btn_h){
-                on_menu = false
+                return
+            }
+        }
+    }
+    //Current Location: Level Selector
+    if(current_location == "level selector"){
+        //Check clicked x location
+        if(mouse_x < canvas.width/4 - 45 + 90 && mouse_x > canvas.width/4 - 45){
+            //Check clicked y location
+            if(mouse_y > canvas.height/4 && mouse_y < canvas.height/4 + 90){
+                //Start game loop
+                current_location = "map 1"
+                gameSetup()
             }
         }
     }
