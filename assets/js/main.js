@@ -6,9 +6,12 @@ var ctx = canvas.getContext("2d")
 //Variables
 var game_started = false
 var current_location
-var btn_start_game = [canvas.width/2 - 100, 200, canvas.height/2, 50]
-var btn_color_picker = [canvas.width/2 - 100, 200, canvas.height/16*11, 50]
-var btn_map1 = [canvas.width/3-45, 90, canvas.height/4, 90]
+var btn_start_game = [canvas.width/2 - 100, canvas.height/2, 200, 50]
+var btn_color_picker = [canvas.width/2 - 100, canvas.height/16*11, 200, 50]
+var btn_map1 = [canvas.width/3-45, canvas.height/4, 90, 90]
+var btn_map2 = [canvas.width/3*2-45, canvas.height/4, 90, 90]
+var btn_map3 = [canvas.width/3-45, canvas.height/2, 90, 90]
+var btn_map4 = [canvas.width/3*2-45, canvas.height/2, 90, 90]
 var update_interval 
 var render_interval
 
@@ -42,41 +45,45 @@ canvas.addEventListener("mouseup", function(evt){
     //Current Location: Menu
     if(current_location == "menu"){
         //start game button
-        if ((mouse_x >= btn_start_game[0] && mouse_x <= btn_start_game[0] + btn_start_game[1])
-        && (mouse_y >= btn_start_game[2] && mouse_y <= btn_start_game[2] + btn_start_game[3])) {
+        if ((mouse_x >= btn_start_game[0] && mouse_x <= btn_start_game[0] + btn_start_game[2])
+        &&(mouse_y >= btn_start_game[1] && mouse_y <= btn_start_game[1] + btn_start_game[3])){
+            console.log("Start Game")
             renderLevelSelector()
             return
         }
         //color picker button
-        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
-        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
+        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[2])
+        &&(mouse_y >= btn_color_picker[1] && mouse_y <= btn_color_picker[1] + btn_color_picker[3])){
+            console.log("Color Picker")
             return
         }
     }
     
     //Current Location: Level Selector
+    if (current_location == "level selector") {
         //tutorial/map1
-        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[1])
-        && (mouse_y >= btn_map1[2] && mouse_y <= btn_map1[2] + btn_map1[3])) {
-            console.log("working")
+        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
+        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+            console.log("Map 1")
             return
         }
         //map2
-        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
-        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
-            console.log("working")
+        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
+        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+            console.log("Map 2")
             return
         }
         //map3
-        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
-        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
-            console.log("working")
+        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
+        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+            console.log("Map 3")
             return
         }
         //map4
-        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
-        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
-            console.log("working")
+        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
+        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+            console.log("Map 4")
             return
         }
+    }
 })

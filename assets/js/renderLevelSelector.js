@@ -22,19 +22,18 @@ function renderLevelSelector(){
     //Buttons
     //button fill rectangle
     ctx.fillStyle = "gold"
-    ctx.fillRect(btn_map1[0], btn_map1[2], btn_map1[1], btn_map1[3]) 
-    ctx.fillRect(canvas.width/3*2-45, canvas.height/4, 90, 90) 
-    ctx.fillRect(canvas.width/3-45, canvas.height/2, 90, 90) 
-    ctx.fillRect(canvas.width/3*2-45, canvas.height/2, 90, 90)
-    ctx.fillRect(30, 30, 30, 30)
+    ctx.fillRect(btn_map1[0], btn_map1[1], btn_map1[2], btn_map1[3]) 
+    ctx.fillRect(btn_map2[0], btn_map2[1], btn_map2[2], btn_map2[3]) 
+    ctx.fillRect(btn_map3[0], btn_map3[1], btn_map3[2], btn_map3[3]) 
+    ctx.fillRect(btn_map4[0], btn_map4[1], btn_map4[2], btn_map4[3])
     //button stroke rectangle
     ctx.strokeStyle = "goldenrod"
-    ctx.strokeRect(canvas.width/3-45, canvas.height/4, 90, 90) 
-    ctx.strokeRect(canvas.width/3*2-45, canvas.height/4, 90, 90) 
-    ctx.strokeRect(canvas.width/3-45, canvas.height/2, 90, 90) 
-    ctx.strokeRect(canvas.width/3*2-45, canvas.height/2, 90, 90) 
+    ctx.strokeRect(btn_map1[0], btn_map1[1], btn_map1[2], btn_map1[3]) 
+    ctx.strokeRect(btn_map2[0], btn_map2[1], btn_map2[2], btn_map2[3]) 
+    ctx.strokeRect(btn_map3[0], btn_map3[1], btn_map3[2], btn_map3[3]) 
+    ctx.strokeRect(btn_map4[0], btn_map4[1], btn_map4[2], btn_map4[3]) 
     ctx.lineWidth = 3
-    ctx.strokeRect(30, 30, 30, 30)
+    ctx.strokeRect(canvas.width/2-100, canvas.height/24*21+18, 200, 25)
     //button fill text
     ctx.fillStyle = "goldenrod"
     ctx.font = "25px Copperplate"
@@ -43,8 +42,7 @@ function renderLevelSelector(){
     ctx.fillText("[map 2]", canvas.width/3*2, canvas.height/4+45, 75)
     ctx.fillText("[map 3]", canvas.width/3, canvas.height/2+45, 75)
     ctx.fillText("[map 4]", canvas.width/3*2, canvas.height/2+45, 75) 
-    ctx.font = "15px Copperplate"
-    ctx.fillText("back", 45, 45, 30)
+    ctx.fillText("back", canvas.width/2,  canvas.width/24*22+8)
     //Set current location
     current_location = "level selector"
 }
