@@ -20,15 +20,26 @@ function renderLevelSelector(){
     ctx.fillStyle = "#16bab1"
     ctx.fillRect(0,0,canvas.width, canvas.height/6)
     //Buttons
-    //tutorial/map1
+    //button fill rectangle
     ctx.fillStyle = "gold"
-    ctx.fillRect(canvas.width/4-45, canvas.height/4, 90, 90) 
+    ctx.fillRect(canvas.width/3-45, canvas.height/4, 90, 90) 
+    ctx.fillRect(canvas.width/3*2-45, canvas.height/4, 90, 90) 
+    ctx.fillRect(canvas.width/3-45, canvas.height/2, 90, 90) 
+    ctx.fillRect(canvas.width/3*2-45, canvas.height/2, 90, 90) 
+    //button stroke rectangle
     ctx.strokeStyle = "goldenrod"
-    ctx.strokeRect(canvas.width/4-45, canvas.height/4, 90, 90) 
+    ctx.strokeRect(canvas.width/3-45, canvas.height/4, 90, 90) 
+    ctx.strokeRect(canvas.width/3*2-45, canvas.height/4, 90, 90) 
+    ctx.strokeRect(canvas.width/3-45, canvas.height/2, 90, 90) 
+    ctx.strokeRect(canvas.width/3*2-45, canvas.height/2, 90, 90) 
+    //button fill text
     ctx.fillStyle = "goldenrod"
     ctx.font = "25px Copperplate"
     ctx.textBaseline = "middle"
-    ctx.fillText("Tutorial", canvas.width/4, canvas.height/4+45, 75)
+    ctx.fillText("Tutorial", canvas.width/3, canvas.height/4+45, 75)
+    ctx.fillText("[map 2]", canvas.width/3*2, canvas.height/4+45, 75)
+    ctx.fillText("[map 3]", canvas.width/3, canvas.height/2+45, 75)
+    ctx.fillText("[map 4]", canvas.width/3*2, canvas.height/2+45, 75) 
     //Set current location
     current_location = "level selector"
 }

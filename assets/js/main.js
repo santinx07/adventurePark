@@ -43,15 +43,15 @@ canvas.addEventListener("mouseup", function(evt){
     //Current Location: Menu
     if(current_location == "menu"){
         //Check clicked x location
-        if(mouse_x < btn_x + btn_w && mouse_x > btn_x){
+        if(mouse_x <= btn_x + btn_w && mouse_x >= btn_x){
             //Check clicked y location
             //Start Game button (btn1)
-            if(mouse_y > btn1_y && mouse_y < btn1_y + btn_h){
+            if(mouse_y >= btn1_y && mouse_y <= btn1_y + btn_h){
                 renderLevelSelector()
                 return
             }
             //Color Picker button (btn2)
-            if(mouse_y > btn2_y && mouse_y < btn2_y + btn_h){
+            if(mouse_y >= btn2_y && mouse_y <= btn2_y + btn_h){
                 return
             }
         }
@@ -59,12 +59,11 @@ canvas.addEventListener("mouseup", function(evt){
     //Current Location: Level Selector
     if(current_location == "level selector"){
         //Check clicked x location
-        if(mouse_x < canvas.width/4 - 45 + 90 && mouse_x > canvas.width/4 - 45){
+        if(mouse_x <= canvas.width/3-45 + 90 && mouse_x >= canvas.width/3-45){
             //Check clicked y location
-            if(mouse_y > canvas.height/4 && mouse_y < canvas.height/4 + 90){
-                //Start game loop
-                current_location = "map 1"
-                gameSetup()
+            if(mouse_y >= canvas.height/4 && mouse_y <= canvas.height/4 + 90){
+                console.log("1")
+                return
             }
         }
     }
