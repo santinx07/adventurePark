@@ -6,11 +6,9 @@ var ctx = canvas.getContext("2d")
 //Variables
 var game_started = false
 var current_location
-var btn_w = 200
-var btn_h = 50
-var btn_x = canvas.width/2 - btn_w/2
-var btn1_y = canvas.height/2
-var btn2_y = canvas.height/16*11
+var btn_start_game = [canvas.width/2 - 100, 200, canvas.height/2, 50]
+var btn_color_picker = [canvas.width/2 - 100, 200, canvas.height/16*11, 50]
+var btn_map1 = [canvas.width/3-45, 90, canvas.height/4, 90]
 var update_interval 
 var render_interval
 
@@ -40,31 +38,45 @@ canvas.addEventListener("mouseup", function(evt){
     //Check mouse locations
     var mouse_x = evt.offsetX
     var mouse_y = evt.offsetY
+
     //Current Location: Menu
     if(current_location == "menu"){
-        //Check clicked x location
-        if(mouse_x <= btn_x + btn_w && mouse_x >= btn_x){
-            //Check clicked y location
-            //Start Game button (btn1)
-            if(mouse_y >= btn1_y && mouse_y <= btn1_y + btn_h){
-                renderLevelSelector()
-                return
-            }
-            //Color Picker button (btn2)
-            if(mouse_y >= btn2_y && mouse_y <= btn2_y + btn_h){
-                return
-            }
+        //start game button
+        if ((mouse_x >= btn_start_game[0] && mouse_x <= btn_start_game[0] + btn_start_game[1])
+        && (mouse_y >= btn_start_game[2] && mouse_y <= btn_start_game[2] + btn_start_game[3])) {
+            renderLevelSelector()
+            return
+        }
+        //color picker button
+        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
+        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
+            return
         }
     }
+    
     //Current Location: Level Selector
-    if(current_location == "level selector"){
-        //Check clicked x location
-        if(mouse_x <= canvas.width/3-45 + 90 && mouse_x >= canvas.width/3-45){
-            //Check clicked y location
-            if(mouse_y >= canvas.height/4 && mouse_y <= canvas.height/4 + 90){
-                console.log("1")
-                return
-            }
+        //tutorial/map1
+        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[1])
+        && (mouse_y >= btn_map1[2] && mouse_y <= btn_map1[2] + btn_map1[3])) {
+            console.log("working")
+            return
         }
-    }
+        //map2
+        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
+        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
+            console.log("working")
+            return
+        }
+        //map3
+        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
+        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
+            console.log("working")
+            return
+        }
+        //map4
+        if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[1])
+        && (mouse_y >= btn_color_picker[2] && mouse_y <= btn_color_picker[2] + btn_color_picker[3])) {
+            console.log("working")
+            return
+        }
 })

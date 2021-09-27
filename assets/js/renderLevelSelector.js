@@ -22,16 +22,19 @@ function renderLevelSelector(){
     //Buttons
     //button fill rectangle
     ctx.fillStyle = "gold"
-    ctx.fillRect(canvas.width/3-45, canvas.height/4, 90, 90) 
+    ctx.fillRect(btn_map1[0], btn_map1[2], btn_map1[1], btn_map1[3]) 
     ctx.fillRect(canvas.width/3*2-45, canvas.height/4, 90, 90) 
     ctx.fillRect(canvas.width/3-45, canvas.height/2, 90, 90) 
-    ctx.fillRect(canvas.width/3*2-45, canvas.height/2, 90, 90) 
+    ctx.fillRect(canvas.width/3*2-45, canvas.height/2, 90, 90)
+    ctx.fillRect(30, 30, 30, 30)
     //button stroke rectangle
     ctx.strokeStyle = "goldenrod"
     ctx.strokeRect(canvas.width/3-45, canvas.height/4, 90, 90) 
     ctx.strokeRect(canvas.width/3*2-45, canvas.height/4, 90, 90) 
     ctx.strokeRect(canvas.width/3-45, canvas.height/2, 90, 90) 
     ctx.strokeRect(canvas.width/3*2-45, canvas.height/2, 90, 90) 
+    ctx.lineWidth = 3
+    ctx.strokeRect(30, 30, 30, 30)
     //button fill text
     ctx.fillStyle = "goldenrod"
     ctx.font = "25px Copperplate"
@@ -40,6 +43,8 @@ function renderLevelSelector(){
     ctx.fillText("[map 2]", canvas.width/3*2, canvas.height/4+45, 75)
     ctx.fillText("[map 3]", canvas.width/3, canvas.height/2+45, 75)
     ctx.fillText("[map 4]", canvas.width/3*2, canvas.height/2+45, 75) 
+    ctx.font = "15px Copperplate"
+    ctx.fillText("back", 45, 45, 30)
     //Set current location
     current_location = "level selector"
 }
