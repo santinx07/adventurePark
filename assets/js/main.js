@@ -58,6 +58,7 @@ canvas.addEventListener("mouseup", function(evt){
         if ((mouse_x >= btn_color_picker[0] && mouse_x <= btn_color_picker[0] + btn_color_picker[2])
         &&(mouse_y >= btn_color_picker[1] && mouse_y <= btn_color_picker[1] + btn_color_picker[3])){
             console.log("Color Picker")
+            renderColorPicker()
             return
         }
     }

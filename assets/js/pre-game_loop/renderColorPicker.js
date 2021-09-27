@@ -20,4 +20,6 @@ function renderColorPicker(){
     ctx.fillRect(0,0,canvas.width, canvas.height/6*2)
     ctx.fillStyle = "#16bab1"
     ctx.fillRect(0,0,canvas.width, canvas.height/6)
+    //Set current location
+    current_location = "color picker"
 }
