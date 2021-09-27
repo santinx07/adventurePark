@@ -1,3 +1,4 @@
+
 function renderLevelSelector(){
     //Clear Canvas
     ctx.clearRect(0,0,canvas.width,canvas.height)
@@ -33,7 +34,7 @@ function renderLevelSelector(){
     ctx.strokeRect(btn_map3[0], btn_map3[1], btn_map3[2], btn_map3[3]) 
     ctx.strokeRect(btn_map4[0], btn_map4[1], btn_map4[2], btn_map4[3]) 
     ctx.lineWidth = 3
-    ctx.strokeRect(canvas.width/2-100, canvas.height/24*21+18, 200, 25)
+    ctx.strokeRect(btn_back[0], btn_back[1], btn_back[2], btn_back[3])
     //button fill text
     ctx.fillStyle = "goldenrod"
     ctx.font = "25px Copperplate"

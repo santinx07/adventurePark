@@ -1,4 +1,7 @@
+
 function init(){
+    //Clear Canvas
+    ctx.clearRect(0,0,canvas.width,canvas.height)
     //Background
     //ground
     ctx.fillStyle = "#ab8035"
