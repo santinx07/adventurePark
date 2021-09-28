@@ -17,16 +17,25 @@ var btn_colors = [
     [canvas.width/5-25, canvas.height/4, 50, 50], 
     [canvas.width/5*2-25, canvas.height/4, 50, 50],
     [canvas.width/5*3-25, canvas.height/4, 50, 50],
-    [canvas.width/5*4-25, canvas.height/4, 50, 50]
+    [canvas.width/5*4-25, canvas.height/4, 50, 50],
+    [canvas.width/5-25, canvas.height/16*7, 50, 50],
+    [canvas.width/5*2-25, canvas.height/16*7, 50, 50],
+    [canvas.width/5*3-25, canvas.height/16*7, 50, 50],
+    [canvas.width/5*4-25, canvas.height/16*7, 50, 50],
+    [canvas.width/5-25, canvas.height/8*5, 50, 50],
+    [canvas.width/5*2-25, canvas.height/8*5, 50, 50],
+    [canvas.width/5*3-25, canvas.height/8*5, 50, 50],
+    [canvas.width/5*4-25, canvas.height/8*5, 50, 50]
 ]
 var update_interval 
 var render_interval
+var color = "white"
 
 //Call init function
 init()
 
 //Game set up function
-function gameSetup(level, color){
+function gameSetup(level){
     //reset
     //set current location
     current_location = level
@@ -118,71 +127,76 @@ canvas.addEventListener("mouseup", function(evt){
         if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
         &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color1")
+            color = "white"
             return
         }
         //color2
-        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
-        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
+        if ((mouse_x >= btn_colors[1][0] && mouse_x <= btn_colors[1][0] + btn_colors[1][2])
+        &&(mouse_y >= btn_colors[1][1] && mouse_y <= btn_colors[1][1] + btn_colors[1][3])){
             console.log("color2")
+            color = "yellow"
             return
         }
         //color3
-        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
-        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
+        if ((mouse_x >= btn_colors[2][0] && mouse_x <= btn_colors[2][0] + btn_colors[2][2])
+        &&(mouse_y >= btn_colors[2][1] && mouse_y <= btn_colors[2][1] + btn_colors[2][3])){
             console.log("color3")
+            color = "red"
             return
         }
         //color4
-        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
-        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
+        if ((mouse_x >= btn_colors[3][0] && mouse_x <= btn_colors[3][0] + btn_colors[3][2])
+        &&(mouse_y >= btn_colors[3][1] && mouse_y <= btn_colors[3][1] + btn_colors[3][3])){
             console.log("color4")
+            color = "blue"
             return
         }
         //color5
-        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
-        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
+        if ((mouse_x >= btn_colors[4][0] && mouse_x <= btn_colors[4][0] + btn_colors[4][2])
+        &&(mouse_y >= btn_colors[4][1] && mouse_y <= btn_colors[4][1] + btn_colors[4][3])){
             console.log("color5")
+            color = "green"
             return
         }
         //color6
-        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
-        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
+        if ((mouse_x >= btn_colors[5][0] && mouse_x <= btn_colors[5][0] + btn_colors[5][2])
+        &&(mouse_y >= btn_colors[5][1] && mouse_y <= btn_colors[5][1] + btn_colors[5][3])){
             console.log("color6")
             return
         }
         //color7
-        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
-        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+        if ((mouse_x >= btn_colors[6][0] && mouse_x <= btn_colors[6][0] + btn_colors[6][2])
+        &&(mouse_y >= btn_colors[6][1] && mouse_y <= btn_colors[6][1] + btn_colors[6][3])){
             console.log("color7")
             return
         }
         //color8
-        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
-        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+        if ((mouse_x >= btn_colors[7][0] && mouse_x <= btn_colors[7][0] + btn_colors[7][2])
+        &&(mouse_y >= btn_colors[7][1] && mouse_y <= btn_colors[7][1] + btn_colors[7][3])){
             console.log("color8")
             return
         }
         //color9
-        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
-        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+        if ((mouse_x >= btn_colors[8][0] && mouse_x <= btn_colors[8][0] + btn_colors[8][2])
+        &&(mouse_y >= btn_colors[8][1] && mouse_y <= btn_colors[8][1] + btn_colors[8][3])){
             console.log("color9")
             return
         }
         //color10
-        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
-        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+        if ((mouse_x >= btn_colors[9][0] && mouse_x <= btn_colors[9][0] + btn_colors[9][2])
+        &&(mouse_y >= btn_colors[9][1] && mouse_y <= btn_colors[9][1] + btn_colors[9][3])){
             console.log("color10")
             return
         }
         //color11
-        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
-        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+        if ((mouse_x >= btn_colors[10][0] && mouse_x <= btn_colors[10][0] + btn_colors[10][2])
+        &&(mouse_y >= btn_colors[10][1] && mouse_y <= btn_colors[10][1] + btn_colors[10][3])){
             console.log("color11")
             return
         }
         //color12
-        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
-        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+        if ((mouse_x >= btn_colors[11][0] && mouse_x <= btn_colors[11][0] + btn_colors[11][2])
+        &&(mouse_y >= btn_colors[11][1] && mouse_y <= btn_colors[11][1] + btn_colors[11][3])){
             console.log("color12")
             return
         }
