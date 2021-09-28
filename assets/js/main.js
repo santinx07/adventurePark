@@ -20,7 +20,7 @@ var render_interval
 init()
 
 //Game set up function
-function gameSetup(level){
+function gameSetup(level, color){
     //reset
     //set current location
     current_location = level
@@ -102,6 +102,82 @@ canvas.addEventListener("mouseup", function(evt){
         &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
             console.log("Map 4")
             gameSetup("4")
+            return
+        }
+    }
+
+    //Current Location: Color Picker
+    if (current_location == "color picker") {
+        //color1
+        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
+        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+            console.log("color1")
+            return
+        }
+        //color2
+        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
+        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+            console.log("color2")
+            return
+        }
+        //color3
+        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
+        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+            console.log("color3")
+            return
+        }
+        //color4
+        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
+        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+            console.log("color4")
+            return
+        }
+        //color5
+        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
+        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+            console.log("color5")
+            return
+        }
+        //color6
+        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
+        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+            console.log("color6")
+            return
+        }
+        //color7
+        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
+        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+            console.log("color7")
+            return
+        }
+        //color8
+        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
+        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+            console.log("color8")
+            return
+        }
+        //color9
+        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
+        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+            console.log("color9")
+            return
+        }
+        //color10
+        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
+        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+            console.log("color10")
+            return
+        }
+        //color11
+        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
+        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+            console.log("color11")
+            return
+        }
+        //color12
+        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
+        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+            console.log("color12")
             return
         }
     }

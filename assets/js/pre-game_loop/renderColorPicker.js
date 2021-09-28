@@ -21,6 +21,25 @@ function renderColorPicker(){
     ctx.fillStyle = "#16bab1"
     ctx.fillRect(0,0,canvas.width, canvas.height/6)
     //Buttons
+    //button fill rectangle
+    ctx.fillStyle = "#e5e5e5"
+    ctx.fillRect(canvas.width/5-25, canvas.height/4, 50, 50)
+    ctx.fillStyle = "#dae167"
+    ctx.fillRect(canvas.width/5*2-25, canvas.height/4, 50, 50)
+    ctx.fillStyle = "#ee5d5d"
+    ctx.fillRect(canvas.width/5*3-25, canvas.height/4, 50, 50)
+    ctx.fillStyle = "#79a7f2"
+    ctx.fillRect(canvas.width/5*4-25, canvas.height/4, 50, 50)
+    ctx.fillStyle = "#aadd60"
+    ctx.fillRect(canvas.width/5-25, canvas.height/16*7, 50, 50)
+    ctx.fillStyle = "gray"
+    ctx.fillRect(canvas.width/5*2-25, canvas.height/16*7, 50, 50)
+    ctx.fillRect(canvas.width/5*3-25, canvas.height/16*7, 50, 50)
+    ctx.fillRect(canvas.width/5*4-25, canvas.height/16*7, 50, 50)
+    ctx.fillRect(canvas.width/5-25, canvas.height/8*5, 50, 50)
+    ctx.fillRect(canvas.width/5*2-25, canvas.height/8*5, 50, 50)
+    ctx.fillRect(canvas.width/5*3-25, canvas.height/8*5, 50, 50)
+    ctx.fillRect(canvas.width/5*4-25, canvas.height/8*5, 50, 50)
     //button stroke rectangle
     ctx.strokeStyle = "goldenrod"
     ctx.lineWidth = 3
