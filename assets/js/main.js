@@ -62,9 +62,9 @@ canvas.addEventListener("mouseup", function(evt){
             return
         }
     }
-    
-    //Current Location: Level Selector
-    if (current_location == "level selector") {
+
+    //Current Location: Level Selector & Color Picker
+    if (current_location == "level selector" || current_location == "color picker") {
         //back button
         if ((mouse_x >= btn_back[0] && mouse_x <= btn_back[0] + btn_back[2])
         &&(mouse_y >= btn_back[1] && mouse_y <= btn_back[1] + btn_back[3])){
@@ -72,6 +72,10 @@ canvas.addEventListener("mouseup", function(evt){
             init()
             return
         }
+    }
+    
+    //Current Location: Level Selector
+    if (current_location == "level selector") {
         //tutorial/map1
         if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
         &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
