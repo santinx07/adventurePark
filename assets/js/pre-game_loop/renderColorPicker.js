@@ -23,13 +23,13 @@ function renderColorPicker(){
     //Buttons
     //button fill rectangle
     ctx.fillStyle = "#e5e5e5"
-    ctx.fillRect(canvas.width/5-25, canvas.height/4, 50, 50)
+    ctx.fillRect(btn_colors[0][0], btn_colors[0][1], btn_colors[0][2], btn_colors[0][3])
     ctx.fillStyle = "#dae167"
-    ctx.fillRect(canvas.width/5*2-25, canvas.height/4, 50, 50)
+    ctx.fillRect(btn_colors[1][0], btn_colors[1][1], btn_colors[1][2], btn_colors[1][3])
     ctx.fillStyle = "#ee5d5d"
-    ctx.fillRect(canvas.width/5*3-25, canvas.height/4, 50, 50)
+    ctx.fillRect(btn_colors[2][0], btn_colors[2][1], btn_colors[2][2], btn_colors[2][3])
     ctx.fillStyle = "#79a7f2"
-    ctx.fillRect(canvas.width/5*4-25, canvas.height/4, 50, 50)
+    ctx.fillRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
     ctx.fillStyle = "#aadd60"
     ctx.fillRect(canvas.width/5-25, canvas.height/16*7, 50, 50)
     ctx.fillStyle = "gray"

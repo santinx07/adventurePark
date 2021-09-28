@@ -13,6 +13,12 @@ var btn_map1 = [canvas.width/3-45, canvas.height/4, 90, 90]
 var btn_map2 = [canvas.width/3*2-45, canvas.height/4, 90, 90]
 var btn_map3 = [canvas.width/3-45, canvas.height/2, 90, 90]
 var btn_map4 = [canvas.width/3*2-45, canvas.height/2, 90, 90]
+var btn_colors = [
+    [canvas.width/5-25, canvas.height/4, 50, 50], 
+    [canvas.width/5*2-25, canvas.height/4, 50, 50],
+    [canvas.width/5*3-25, canvas.height/4, 50, 50],
+    [canvas.width/5*4-25, canvas.height/4, 50, 50]
+]
 var update_interval 
 var render_interval
 
@@ -109,38 +115,38 @@ canvas.addEventListener("mouseup", function(evt){
     //Current Location: Color Picker
     if (current_location == "color picker") {
         //color1
-        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
-        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
+        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color1")
             return
         }
         //color2
-        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
-        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
+        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color2")
             return
         }
         //color3
-        if ((mouse_x >= btn_map3[0] && mouse_x <= btn_map3[0] + btn_map3[2])
-        &&(mouse_y >= btn_map3[1] && mouse_y <= btn_map3[1] + btn_map3[3])){
+        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
+        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color3")
             return
         }
         //color4
-        if ((mouse_x >= btn_map4[0] && mouse_x <= btn_map4[0] + btn_map4[2])
-        &&(mouse_y >= btn_map4[1] && mouse_y <= btn_map4[1] + btn_map4[3])){
+        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
+        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color4")
             return
         }
         //color5
-        if ((mouse_x >= btn_map1[0] && mouse_x <= btn_map1[0] + btn_map1[2])
-        &&(mouse_y >= btn_map1[1] && mouse_y <= btn_map1[1] + btn_map1[3])){
+        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
+        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color5")
             return
         }
         //color6
-        if ((mouse_x >= btn_map2[0] && mouse_x <= btn_map2[0] + btn_map2[2])
-        &&(mouse_y >= btn_map2[1] && mouse_y <= btn_map2[1] + btn_map2[3])){
+        if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
+        &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
             console.log("color6")
             return
         }
