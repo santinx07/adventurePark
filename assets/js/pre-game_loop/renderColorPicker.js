@@ -28,10 +28,13 @@ function renderColorPicker(){
     ctx.fillRect(btn_colors[1][0], btn_colors[1][1], btn_colors[1][2], btn_colors[1][3])
     ctx.fillStyle = "#f03535"
     ctx.fillRect(btn_colors[2][0], btn_colors[2][1], btn_colors[2][2], btn_colors[2][3])
-    ctx.fillStyle = "gray"
+    ctx.fillStyle = "#1b5bf4"
     ctx.fillRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
+    ctx.fillStyle = "#fb9d34"
     ctx.fillRect(btn_colors[4][0], btn_colors[4][1], btn_colors[4][2], btn_colors[4][3])
+    ctx.fillStyle = "#60ec50"
     ctx.fillRect(btn_colors[5][0], btn_colors[5][1], btn_colors[5][2], btn_colors[5][3])
+    ctx.fillStyle = "gray"
     ctx.fillRect(btn_colors[6][0], btn_colors[6][1], btn_colors[6][2], btn_colors[6][3])
     ctx.fillRect(btn_colors[7][0], btn_colors[7][1], btn_colors[7][2], btn_colors[7][3])
     ctx.fillRect(btn_colors[8][0], btn_colors[8][1], btn_colors[8][2], btn_colors[8][3])
@@ -45,10 +48,13 @@ function renderColorPicker(){
     ctx.strokeRect(btn_colors[1][0], btn_colors[1][1], btn_colors[1][2], btn_colors[1][3])
     ctx.strokeStyle = "#d21616"
     ctx.strokeRect(btn_colors[2][0], btn_colors[2][1], btn_colors[2][2], btn_colors[2][3])
-    ctx.strokeStyle = "gray"
+    ctx.strokeStyle = "#073ec1"
     ctx.strokeRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
+    ctx.strokeStyle = "#df8117"
     ctx.strokeRect(btn_colors[4][0], btn_colors[4][1], btn_colors[4][2], btn_colors[4][3])
+    ctx.strokeStyle = "#3dc72d"
     ctx.strokeRect(btn_colors[5][0], btn_colors[5][1], btn_colors[5][2], btn_colors[5][3])
+    ctx.strokeStyle = "gray"
     ctx.strokeRect(btn_colors[6][0], btn_colors[6][1], btn_colors[6][2], btn_colors[6][3])
     ctx.strokeRect(btn_colors[7][0], btn_colors[7][1], btn_colors[7][2], btn_colors[7][3])
     ctx.strokeRect(btn_colors[8][0], btn_colors[8][1], btn_colors[8][2], btn_colors[8][3])

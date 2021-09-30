@@ -154,50 +154,57 @@ canvas.addEventListener("mouseup", function(evt){
         //color5
         if ((mouse_x >= btn_colors[4][0] && mouse_x <= btn_colors[4][0] + btn_colors[4][2])
         &&(mouse_y >= btn_colors[4][1] && mouse_y <= btn_colors[4][1] + btn_colors[4][3])){
-            console.log("green")
-            color = "green"
+            console.log("lime")
+            color = "lime"
             return
         }
         //color6
         if ((mouse_x >= btn_colors[5][0] && mouse_x <= btn_colors[5][0] + btn_colors[5][2])
         &&(mouse_y >= btn_colors[5][1] && mouse_y <= btn_colors[5][1] + btn_colors[5][3])){
             console.log("orange")
+            color = "orange"
             return
         }
         //color7
         if ((mouse_x >= btn_colors[6][0] && mouse_x <= btn_colors[6][0] + btn_colors[6][2])
         &&(mouse_y >= btn_colors[6][1] && mouse_y <= btn_colors[6][1] + btn_colors[6][3])){
             console.log("pink")
+            color = "pink"
             return
         }
         //color8
         if ((mouse_x >= btn_colors[7][0] && mouse_x <= btn_colors[7][0] + btn_colors[7][2])
         &&(mouse_y >= btn_colors[7][1] && mouse_y <= btn_colors[7][1] + btn_colors[7][3])){
             console.log("black")
+            color = "black"
             return
         }
         //color9
         if ((mouse_x >= btn_colors[8][0] && mouse_x <= btn_colors[8][0] + btn_colors[8][2])
         &&(mouse_y >= btn_colors[8][1] && mouse_y <= btn_colors[8][1] + btn_colors[8][3])){
             console.log("cyan")
+            color = "cyan"
             return
         }
         //color10
         if ((mouse_x >= btn_colors[9][0] && mouse_x <= btn_colors[9][0] + btn_colors[9][2])
         &&(mouse_y >= btn_colors[9][1] && mouse_y <= btn_colors[9][1] + btn_colors[9][3])){
-            console.log("client suggested")
+            console.log("brown")
+            color = "brown"
             return
         }
         //color11
         if ((mouse_x >= btn_colors[10][0] && mouse_x <= btn_colors[10][0] + btn_colors[10][2])
         &&(mouse_y >= btn_colors[10][1] && mouse_y <= btn_colors[10][1] + btn_colors[10][3])){
-            console.log("client suggested")
+            console.log("purple")
+            color = "purple"
             return
         }
         //color12
         if ((mouse_x >= btn_colors[11][0] && mouse_x <= btn_colors[11][0] + btn_colors[11][2])
         &&(mouse_y >= btn_colors[11][1] && mouse_y <= btn_colors[11][1] + btn_colors[11][3])){
-            console.log("client suggested")
+            console.log("green")
+            color = "green"
             return
         }
     }
