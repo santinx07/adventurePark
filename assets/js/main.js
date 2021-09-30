@@ -154,15 +154,15 @@ canvas.addEventListener("mouseup", function(evt){
         //color5
         if ((mouse_x >= btn_colors[4][0] && mouse_x <= btn_colors[4][0] + btn_colors[4][2])
         &&(mouse_y >= btn_colors[4][1] && mouse_y <= btn_colors[4][1] + btn_colors[4][3])){
-            console.log("lime")
-            color = "lime"
+            console.log("orange")
+            color = "orange"
             return
         }
         //color6
         if ((mouse_x >= btn_colors[5][0] && mouse_x <= btn_colors[5][0] + btn_colors[5][2])
         &&(mouse_y >= btn_colors[5][1] && mouse_y <= btn_colors[5][1] + btn_colors[5][3])){
-            console.log("orange")
-            color = "orange"
+            console.log("lime")
+            color = "lime"
             return
         }
         //color7
