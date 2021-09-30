@@ -7,7 +7,7 @@ class RigidBody extends Entity{
 
         this.affected_by_gravity = affected_by_gravity
         this.x_speed = 0
-        this.y_speed = 0
+        this.y_speed = 1
         this.gravity = 1
     }
 

@@ -4,6 +4,7 @@ var canvas = document.getElementById("gameCanvas")
 var ctx = canvas.getContext("2d")
 
 //Variables
+var gravity = 1
 var game_started = false
 var on_menu
 var btn_w = 200
