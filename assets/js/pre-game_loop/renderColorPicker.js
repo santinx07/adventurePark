@@ -40,8 +40,9 @@ function renderColorPicker(){
     ctx.fillRect(btn_colors[7][0], btn_colors[7][1], btn_colors[7][2], btn_colors[7][3])
     ctx.fillStyle = "#43f7f7"
     ctx.fillRect(btn_colors[8][0], btn_colors[8][1], btn_colors[8][2], btn_colors[8][3])
-    // ctx.fillStyle = "gray"
+    ctx.fillStyle = "#725029"
     ctx.fillRect(btn_colors[9][0], btn_colors[9][1], btn_colors[9][2], btn_colors[9][3])
+    ctx.fillStyle = "gray"
     ctx.fillRect(btn_colors[10][0], btn_colors[10][1], btn_colors[10][2], btn_colors[10][3])
     ctx.fillRect(btn_colors[11][0], btn_colors[11][1], btn_colors[11][2], btn_colors[11][3])
     //button stroke rectangle
@@ -63,8 +64,9 @@ function renderColorPicker(){
     ctx.strokeRect(btn_colors[7][0], btn_colors[7][1], btn_colors[7][2], btn_colors[7][3])
     ctx.strokeStyle = "#1ed9d9"
     ctx.strokeRect(btn_colors[8][0], btn_colors[8][1], btn_colors[8][2], btn_colors[8][3])
-    // ctx.strokeStyle = "gray"
+    ctx.strokeStyle = "#583a17"
     ctx.strokeRect(btn_colors[9][0], btn_colors[9][1], btn_colors[9][2], btn_colors[9][3])
+    ctx.strokeStyle = "gray"
     ctx.strokeRect(btn_colors[10][0], btn_colors[10][1], btn_colors[10][2], btn_colors[10][3])
     ctx.strokeRect(btn_colors[11][0], btn_colors[11][1], btn_colors[11][2], btn_colors[11][3])
     ctx.strokeStyle = "goldenrod"
