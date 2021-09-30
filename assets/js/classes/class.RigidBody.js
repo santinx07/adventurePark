@@ -8,22 +8,6 @@ class RigidBody extends Entity{
         this.x_speed = 0
         this.y_speed = 1
         this.gravity = 1
-    }
-
-
-
-    __update(gravity){
-        this.y_speed += gravity
-        
-    }
-
-
-
-
-
-
-
-
-
+    }   
 
 }
