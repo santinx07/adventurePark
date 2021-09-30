@@ -1,7 +1,4 @@
-
 function init(){
-    //Clear Canvas
-    ctx.clearRect(0,0,canvas.width,canvas.height)
     //Background
     //ground
     ctx.fillStyle = "#ab8035"
@@ -27,17 +24,15 @@ function init(){
     ctx.fillText("ADVENTURE PARK", canvas.width/2,canvas.height/3)
     //Buttons
     ctx.fillStyle = "gold"
-    ctx.fillRect(btn_start_game[0], btn_start_game[1], btn_start_game[2], btn_start_game[3])
-    ctx.fillRect(btn_color_picker[0], btn_color_picker[1], btn_color_picker[2], btn_color_picker[3])
+    ctx.fillRect(btn_x, btn1_y, btn_w, btn_h)
+    ctx.fillRect(btn_x, btn2_y, btn_w, btn_h)
     ctx.strokeStyle = "goldenrod"
     ctx.lineWidth = 5
-    ctx.strokeRect(btn_start_game[0], btn_start_game[1], btn_start_game[2], btn_start_game[3])
-    ctx.strokeRect(btn_color_picker[0], btn_color_picker[1], btn_color_picker[2], btn_color_picker[3])
+    ctx.strokeRect(btn_x, btn1_y, btn_w, btn_h)
+    ctx.strokeRect(btn_x, btn2_y, btn_w, btn_h)
     ctx.fillStyle = "goldenrod"
     ctx.font = "25px Copperplate"
     ctx.textBaseline = "middle"
-    ctx.fillText("Start Game", canvas.width/2, btn_start_game[1] + btn_start_game[3]/2)
-    ctx.fillText("Color Picker", canvas.width/2, btn_color_picker[1] + btn_color_picker[3]/2)
-    //Set current location
-    current_location = "menu"
+    ctx.fillText("Start Game", canvas.width/2, btn1_y + btn_h/2)
+    ctx.fillText("Color Picker", canvas.width/2, btn2_y + btn_h/2)
 }
