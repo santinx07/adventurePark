@@ -4,7 +4,6 @@ var canvas = document.getElementById("gameCanvas")
 var ctx = canvas.getContext("2d")
 
 //Variables
-var test
 var game_started = false
 var current_location
 var btn_start_game = [canvas.width/2 - 100, canvas.height/2, 200, 50]
@@ -41,7 +40,6 @@ function gameSetup(level){
     //set current location
     current_location = level
     //create entities
-    test = new RigidBody(50, 50, 100, 100, true)
     //start game loop
     update_interval = setInterval(function(){ update() }, 10/1000)
     render_interval = setInterval( function(){ render(ctx) }, 30/1000)
