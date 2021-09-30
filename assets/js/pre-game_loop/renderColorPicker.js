@@ -24,15 +24,13 @@ function renderColorPicker(){
     //button fill rectangle
     ctx.fillStyle = "#e5e5e5"
     ctx.fillRect(btn_colors[0][0], btn_colors[0][1], btn_colors[0][2], btn_colors[0][3])
-    ctx.fillStyle = "#dae167"
+    ctx.fillStyle = "#e8ea30"
     ctx.fillRect(btn_colors[1][0], btn_colors[1][1], btn_colors[1][2], btn_colors[1][3])
-    ctx.fillStyle = "#ee5d5d"
+    ctx.fillStyle = "#f03535"
     ctx.fillRect(btn_colors[2][0], btn_colors[2][1], btn_colors[2][2], btn_colors[2][3])
-    ctx.fillStyle = "#79a7f2"
-    ctx.fillRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
-    ctx.fillStyle = "#aadd60"
-    ctx.fillRect(btn_colors[4][0], btn_colors[4][1], btn_colors[4][2], btn_colors[4][3])
     ctx.fillStyle = "gray"
+    ctx.fillRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
+    ctx.fillRect(btn_colors[4][0], btn_colors[4][1], btn_colors[4][2], btn_colors[4][3])
     ctx.fillRect(btn_colors[5][0], btn_colors[5][1], btn_colors[5][2], btn_colors[5][3])
     ctx.fillRect(btn_colors[6][0], btn_colors[6][1], btn_colors[6][2], btn_colors[6][3])
     ctx.fillRect(btn_colors[7][0], btn_colors[7][1], btn_colors[7][2], btn_colors[7][3])
@@ -43,15 +41,13 @@ function renderColorPicker(){
     //button stroke rectangle
     ctx.strokeStyle = "#969696"
     ctx.strokeRect(btn_colors[0][0], btn_colors[0][1], btn_colors[0][2], btn_colors[0][3])
-    ctx.strokeStyle = "#c4cc3b"
+    ctx.strokeStyle = "#c7c920"
     ctx.strokeRect(btn_colors[1][0], btn_colors[1][1], btn_colors[1][2], btn_colors[1][3])
-    ctx.strokeStyle = "#d24d4d"
+    ctx.strokeStyle = "#d21616"
     ctx.strokeRect(btn_colors[2][0], btn_colors[2][1], btn_colors[2][2], btn_colors[2][3])
-    ctx.strokeStyle = "#4f88e5"
-    ctx.strokeRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
-    ctx.strokeStyle = "#87c72c"
-    ctx.strokeRect(btn_colors[4][0], btn_colors[4][1], btn_colors[4][2], btn_colors[4][3])
     ctx.strokeStyle = "gray"
+    ctx.strokeRect(btn_colors[3][0], btn_colors[3][1], btn_colors[3][2], btn_colors[3][3])
+    ctx.strokeRect(btn_colors[4][0], btn_colors[4][1], btn_colors[4][2], btn_colors[4][3])
     ctx.strokeRect(btn_colors[5][0], btn_colors[5][1], btn_colors[5][2], btn_colors[5][3])
     ctx.strokeRect(btn_colors[6][0], btn_colors[6][1], btn_colors[6][2], btn_colors[6][3])
     ctx.strokeRect(btn_colors[7][0], btn_colors[7][1], btn_colors[7][2], btn_colors[7][3])

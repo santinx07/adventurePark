@@ -126,78 +126,78 @@ canvas.addEventListener("mouseup", function(evt){
         //color1
         if ((mouse_x >= btn_colors[0][0] && mouse_x <= btn_colors[0][0] + btn_colors[0][2])
         &&(mouse_y >= btn_colors[0][1] && mouse_y <= btn_colors[0][1] + btn_colors[0][3])){
-            console.log("color1")
+            console.log("white")
             color = "white"
             return
         }
         //color2
         if ((mouse_x >= btn_colors[1][0] && mouse_x <= btn_colors[1][0] + btn_colors[1][2])
         &&(mouse_y >= btn_colors[1][1] && mouse_y <= btn_colors[1][1] + btn_colors[1][3])){
-            console.log("color2")
+            console.log("yellow")
             color = "yellow"
             return
         }
         //color3
         if ((mouse_x >= btn_colors[2][0] && mouse_x <= btn_colors[2][0] + btn_colors[2][2])
         &&(mouse_y >= btn_colors[2][1] && mouse_y <= btn_colors[2][1] + btn_colors[2][3])){
-            console.log("color3")
+            console.log("red")
             color = "red"
             return
         }
         //color4
         if ((mouse_x >= btn_colors[3][0] && mouse_x <= btn_colors[3][0] + btn_colors[3][2])
         &&(mouse_y >= btn_colors[3][1] && mouse_y <= btn_colors[3][1] + btn_colors[3][3])){
-            console.log("color4")
+            console.log("blue")
             color = "blue"
             return
         }
         //color5
         if ((mouse_x >= btn_colors[4][0] && mouse_x <= btn_colors[4][0] + btn_colors[4][2])
         &&(mouse_y >= btn_colors[4][1] && mouse_y <= btn_colors[4][1] + btn_colors[4][3])){
-            console.log("color5")
+            console.log("green")
             color = "green"
             return
         }
         //color6
         if ((mouse_x >= btn_colors[5][0] && mouse_x <= btn_colors[5][0] + btn_colors[5][2])
         &&(mouse_y >= btn_colors[5][1] && mouse_y <= btn_colors[5][1] + btn_colors[5][3])){
-            console.log("color6")
+            console.log("orange")
             return
         }
         //color7
         if ((mouse_x >= btn_colors[6][0] && mouse_x <= btn_colors[6][0] + btn_colors[6][2])
         &&(mouse_y >= btn_colors[6][1] && mouse_y <= btn_colors[6][1] + btn_colors[6][3])){
-            console.log("color7")
+            console.log("pink")
             return
         }
         //color8
         if ((mouse_x >= btn_colors[7][0] && mouse_x <= btn_colors[7][0] + btn_colors[7][2])
         &&(mouse_y >= btn_colors[7][1] && mouse_y <= btn_colors[7][1] + btn_colors[7][3])){
-            console.log("color8")
+            console.log("black")
             return
         }
         //color9
         if ((mouse_x >= btn_colors[8][0] && mouse_x <= btn_colors[8][0] + btn_colors[8][2])
         &&(mouse_y >= btn_colors[8][1] && mouse_y <= btn_colors[8][1] + btn_colors[8][3])){
-            console.log("color9")
+            console.log("cyan")
             return
         }
         //color10
         if ((mouse_x >= btn_colors[9][0] && mouse_x <= btn_colors[9][0] + btn_colors[9][2])
         &&(mouse_y >= btn_colors[9][1] && mouse_y <= btn_colors[9][1] + btn_colors[9][3])){
-            console.log("color10")
+            console.log("client suggested")
             return
         }
         //color11
         if ((mouse_x >= btn_colors[10][0] && mouse_x <= btn_colors[10][0] + btn_colors[10][2])
         &&(mouse_y >= btn_colors[10][1] && mouse_y <= btn_colors[10][1] + btn_colors[10][3])){
-            console.log("color11")
+            console.log("client suggested")
             return
         }
         //color12
         if ((mouse_x >= btn_colors[11][0] && mouse_x <= btn_colors[11][0] + btn_colors[11][2])
         &&(mouse_y >= btn_colors[11][1] && mouse_y <= btn_colors[11][1] + btn_colors[11][3])){
-            console.log("color12")
+            console.log("client suggested")
             return
         }
     }
