@@ -1,7 +1,6 @@
+
 class RigidBody extends Entity{
 
-
-    
     constructor(affected_by_gravity){
         super(x, y, width, height)
 
