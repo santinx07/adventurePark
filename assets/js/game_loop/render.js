@@ -7,7 +7,7 @@ function render(ctx){
     ctx.clearRect(0,0,canvas.width, canvas.height)  
     
     //Render Entities
-
+    
     //Restore saved context
     ctx.restore()
 }

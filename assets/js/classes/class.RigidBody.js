@@ -1,7 +1,7 @@
 
 class RigidBody extends Entity{
 
-    constructor(affected_by_gravity){
+    constructor(x, y, width, height, affected_by_gravity){
         super(x, y, width, height)
 
         this.affected_by_gravity = affected_by_gravity
