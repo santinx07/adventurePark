@@ -5,9 +5,9 @@ class RigidBody extends Entity{
         super(x, y, width, height)
 
         this.affected_by_gravity = affected_by_gravity
-        this.x_speed = 0
+        this.x_speed = 1
         this.y_speed = 1
-        this.gravity = 1
+        this.gravity = 1    
     }
 
 
@@ -23,7 +23,11 @@ class RigidBody extends Entity{
 
 
 
-
-
-
 }
+
+
+
+
+
+
+
